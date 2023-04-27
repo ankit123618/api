@@ -10,16 +10,10 @@ function formcheck($formdata){
   
     foreach($formdata as $data => $value)
     {
-        echo $data."-:";
-        echo $value;
-        echo "<br>";
         if($value == ""){
-            echo $data." field is required";
+            echo $data;
         }
     }
 
 }
-$ret = formcheck($_POST['data']);
-echo $ret;
-
 ?>
